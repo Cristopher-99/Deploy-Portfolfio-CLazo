@@ -1,0 +1,60 @@
+
+.cv {
+    background-color: #613dc1;
+    border: #10002B 2px solid;
+    /* border-radius: 10px; */
+}
+.foto{
+    border:#3A0CA3 2px solid;
+    border-radius: 10px;
+
+
+}
+
+.landing-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.874), rgba(142, 23, 197, 0.766)), url("../../imgs/Background/seccion/cicuitos.gif");
+  background-size: cover;
+  background-position: center center;  
+  color: white;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  
+
+}
+
+  .landing-page h1 {
+    font-weight: 700;
+  }
+  
+  .landing-page .lead {
+    font-size: 1.5rem;
+  }
+  
+  .landing-page .btn {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 500;
+  }
+
+  .about{
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.874), rgba(72, 36, 108, 0.88)), url("../../imgs/Background/seccion/programing.gif");
+    background-size: cover;
+    background-position: center center;  
+    color: white;
+    border:white  solid 1px;
+
+
+  }
+  .hobbies{
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.874), rgba(35, 150, 179, 0.699)), url("../../imgs/Background/seccion/gaming.gif");
+    background-size: cover;
+    background-position: center center;  
+    color: white;
+    border:white  solid 1px;
+
+  }

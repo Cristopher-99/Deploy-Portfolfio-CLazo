@@ -1,0 +1,62 @@
+@import url('https://fonts.cdnfonts.com/css/helleplus32');
+.titleResume{
+    font-family: 'Helleplus32', sans-serif;
+    color: white;
+}
+.pestañasContainer{
+    margin-top: 20px;
+}
+.pestañas{
+    background-color: #613DC1;
+    /* border: #B5179E 1px solid; */
+    border-radius: 5px;
+    
+}
+.pestañasContainer{
+    min-height: 80vh;
+
+}
+.pestañasContainer h1{
+    font-weight: 700;
+}
+#resumedrop{
+    color: white;
+    font-size: xx-large;
+    background-color: #613DC1;
+    border-radius: 10px;
+}
+.seccion{
+    /* background-image: url("../../imgs/Background/v1016-b-09.jpg");
+    background-size: cover;
+    background-position: center center; */
+/* min-height:100vh; */
+
+}
+.title{
+    color: #ffffff;
+    background-color: #322b54;
+    border-radius: 5px;
+
+}
+.titleResume{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.menu{
+    min-height: 100vh;
+
+}
+.image{
+    min-height: 50px;
+}
+.centrado{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.carta{
+    max-height: 60px;
+}
+.imagentech{
+    max-height: 200px;
+}

@@ -1,0 +1,38 @@
+.navegador {
+    display: flex;
+    justify-content: space-between;
+    background-color: #240046c5;
+
+}
+.menu{
+    background-color: aliceblue;
+}
+#links{
+    background-color: aqua;
+
+}
+.logo{
+    margin: 15%;
+    height: 80px;
+    width: 100px;
+}
+
+.hamburguesa{
+    background-color: beige;
+
+}
+.barra{
+}
+.opcion:hover{
+    background-color: rgba(153, 0, 255, 0.18);
+    border-radius: 5px;
+}
+span.active{
+    background-color: rgba(153, 0, 255, 0.575);
+    border-radius: 10px;
+}
+
+
+
+
+

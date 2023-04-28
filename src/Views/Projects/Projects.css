@@ -1,0 +1,22 @@
+.imagen{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.786), rgba(0, 0, 0, 0.746))
+}
+.titulo{
+    background-color: #3F37C9;
+    color: white;
+    border-radius: 5px;
+}
+.button-des{
+    background-color: #e0dbdbd0;
+    color: white;
+}
+.card{
+    border: black 3px solid;
+    border-radius: 15px;
+}
+.pestaña{
+    background-color: #4895EF;
+    color: white;
+    border-radius: 15px;
+    
+}
