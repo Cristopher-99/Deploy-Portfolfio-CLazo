@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollToTopButton from "../../Components/Scroll/Scroll";
 
 import homepoke from "../../imgs/img projects/pokemon/homepoke.png";
 import detailpoke from "../../imgs/img projects/pokemon/detailpoke.png";
@@ -19,118 +20,121 @@ const Projects = () => {
   return (
     <>
       <div class="container pt-3">
-        <h1 className="display-3 title">Proyectos</h1>
+        <section>
+          <h1 className="display-3 title">Proyectos</h1>
 
-        {/*  ---------------------- POKEMON ---------------------------- */}
+          {/*  ---------------------- POKEMON ---------------------------- */}
 
-        <div class="card  mt-3">
-          <h1 class="titulo">Pokemon App</h1>
-          <div
-            id="carouselDark"
-            class="carousel carousel-dark slide"
-            data-bs-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-bs-target="#carouselDark"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-              ></li>
-              <li
-                data-bs-target="#carouselDark"
-                data-bs-slide-to="1"
-                class=""
-              ></li>
-              <li data-bs-target="#carouselDark" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active bg-primary ">
-                <img src={homepoke} class="d-block w-100" alt="Slide 1" />
-                <div class="carousel-caption d-none d-sm-block">
-                  <h3 class="pestaña">Home</h3>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src={detailpoke}
-                  class="d-block w-100 h-100"
-                  alt="Slide 2"
-                />
-                <div class="carousel-caption d-none d-sm-block">
-                  <h3 class="pestaña">Detalle/Stats del Pokemon</h3>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src={createpoke}
-                  class="d-block w-100 h-100"
-                  alt="Slide 3"
-                />
-                <div class="carousel-caption d-none d-sm-block">
-                  <h3 class="pestaña">Creacion de un Pokemon</h3>
-                </div>
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev button-des "
-              href="#carouselDark"
-              role="button"
-              data-bs-slide="prev"
+          <div class="card  mt-3">
+            <h1 class="titulo">Pokemon App</h1>
+            <div
+              id="carouselDark"
+              class="carousel carousel-dark slide"
+              data-bs-ride="carousel"
             >
-              <span
-                class="carousel-control-prev-icon bg-dark rounded-circle"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden ">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next button-des"
-              href="#carouselDark"
-              role="button"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon bg-dark rounded-circle"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </a>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">RESTful API - PokeApi</h3>
-            <p class="card-text">
-              Poke app es un Single page Aplication Full Stack, la cual nos
-              permite buscar, filtrar y crear nuevos Pokemons. Los pokemons de
-              esta app esta traidos de la Api PokeApi, Tambien tiene su seccion
-              de Stats de cada Pokemon.
-            </p>
-            <p className="card-text">
-              Tecnologias usadas :
-              <b> React.js, Redux, PostgreSql, Sequelize y Express.</b>
-            </p>
-            <div class="datos card-text p-1 h3">
+              <ol class="carousel-indicators">
+                <li
+                  data-bs-target="#carouselDark"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                ></li>
+                <li
+                  data-bs-target="#carouselDark"
+                  data-bs-slide-to="1"
+                  class=""
+                ></li>
+                <li data-bs-target="#carouselDark" data-bs-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active bg-primary ">
+                  <img src={homepoke} class="d-block w-100" alt="Slide 1" />
+                  <div class="carousel-caption d-none d-sm-block">
+                    <h3 class="pestaña">Home</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src={detailpoke}
+                    class="d-block w-100 h-100"
+                    alt="Slide 2"
+                  />
+                  <div class="carousel-caption d-none d-sm-block">
+                    <h3 class="pestaña">Detalle/Stats del Pokemon</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src={createpoke}
+                    class="d-block w-100 h-100"
+                    alt="Slide 3"
+                  />
+                  <div class="carousel-caption d-none d-sm-block">
+                    <h3 class="pestaña">Creacion de un Pokemon</h3>
+                  </div>
+                </div>
+              </div>
               <a
-                href="https://github.com/Cristopher-99/PI-POKEMON-CL"
-                style={{ textDecoration: "none" }}
+                class="carousel-control-prev button-des "
+                href="#carouselDark"
+                role="button"
+                data-bs-slide="prev"
               >
-                <i class="bi bi-github"></i>Repositorio {""} | {""}
+                <span
+                  class="carousel-control-prev-icon bg-dark rounded-circle"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden ">Previous</span>
               </a>
               <a
-                href="https://clazo-pokemon.netlify.app/"
-                style={{ textDecoration: "none" }}
+                class="carousel-control-next button-des"
+                href="#carouselDark"
+                role="button"
+                data-bs-slide="next"
               >
-                <i class="bi bi-pc-display-horizontal"></i>Deploy {""} | {""}
-              </a>
-              <a
-                href="https://www.youtube.com/watch?v=y5DRZvSYKfg&t=48s&ab_channel=CristopherLazo"
-                style={{ textDecoration: "none" }}
-              >
-                <i class="bi bi-youtube"></i>Video Presentacion {""}
+                <span
+                  class="carousel-control-next-icon bg-dark rounded-circle"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
               </a>
             </div>
+            <div class="card-body">
+              <h3 class="card-title">RESTful API - PokeApi</h3>
+              <p class="card-text">
+                Poke app es un Single page Aplication Full Stack, la cual nos
+                permite buscar, filtrar y crear nuevos Pokemons. Los pokemons de
+                esta app esta traidos de la Api PokeApi, Tambien tiene su
+                seccion de Stats de cada Pokemon.
+              </p>
+              <p className="card-text">
+                Tecnologias usadas :
+                <b> React.js, Redux, PostgreSql, Sequelize y Express.</b>
+              </p>
+              <div class="datos card-text p-1 h3">
+                <a
+                  href="https://github.com/Cristopher-99/PI-POKEMON-CL"
+                  style={{ textDecoration: "none" }}
+                >
+                  <i class="bi bi-github"></i>Repositorio {""} | {""}
+                </a>
+                <a
+                  href="https://clazo-pokemon.netlify.app/"
+                  style={{ textDecoration: "none" }}
+                >
+                  <i class="bi bi-pc-display-horizontal"></i>Deploy {""} | {""}
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=y5DRZvSYKfg&t=48s&ab_channel=CristopherLazo"
+                  style={{ textDecoration: "none" }}
+                >
+                  <i class="bi bi-youtube"></i>Video Presentacion {""}
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+
         {/*  ---------------------- COUNTRIES ---------------------------- */}
         <div class="card mt-3">
           <h1 class="titulo">SPA Countries Api</h1>
@@ -356,6 +360,7 @@ const Projects = () => {
         </div>
       </div>
       <Contact />
+      <ScrollToTopButton />
     </>
   );
 };
