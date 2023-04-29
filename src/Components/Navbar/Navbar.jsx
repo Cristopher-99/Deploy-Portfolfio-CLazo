@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import logo from "../../imgs/logo 211.png";
+import logo from "../../imgs/home.png";
 import { Navbar, Nav, NavDropdown, Container, NavLink } from "react-bootstrap";
 import "./Navbar.css";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
@@ -42,7 +42,7 @@ const NavBar = () => {
                   : "nav-link  route-hover text-white opcion"
               }
             >
-              <i class="bi bi-file-person-fill"></i> Resume
+              <i class="bi bi-file-person-fill"></i> Resume/CV
             </span>
           </Link>
 

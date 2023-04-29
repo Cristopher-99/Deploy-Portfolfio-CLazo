@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Dropdown } from "react-bootstrap";
+import { Container, Row, Col, Dropdown, Button } from "react-bootstrap";
 import "./Resume.css";
 import hogar from "../../imgs/education/hogar.jpg";
 import ub from "../../imgs/education/ub.jpg";
@@ -11,6 +11,8 @@ import java from "../../imgs/lenguajes/java.png";
 import { tecnologias, herramientas } from "./resume.js";
 import scrum from "../../imgs/metodologias/scrum.jpg";
 import gitflow from "../../imgs/metodologias/git flow.jpg";
+import cv from "../../imgs/CV/CV_Cristopher_Lazo.pdf";
+import Contact from "../Contact/Contact";
 
 const Resume = () => {
   const [key, setKey] = useState("home");
@@ -82,32 +84,40 @@ const Resume = () => {
 
   return (
     <div className="pestañasContainer m-2">
-      <div className="my-auto">
+      <div className="my-auto mb-3">
         <Dropdown>
-          <Dropdown.Toggle
-            id="dropdown-basic"
-            className="p-4 mb-1 rounded-5 w-100 "
-          >
-            <h1 className="display-3 ">Resume</h1>
+          <Dropdown.Toggle id="dropdown-basic" className="w-100 mb-2">
+            <h3 className="display-3 rounded-5  ">
+              Resume <i class="bi bi-caret-down-square-fill"></i>
+            </h3>
           </Dropdown.Toggle>
-          <Dropdown.Menu className="text-center w-100 bg-dark menu">
-            <Dropdown.Item href="#education" className="text-white">
+          <Dropdown.Menu className="text-center  w-100 bg-dark menu ">
+            <Dropdown.Item href="#education" className="text-white h3">
               Educacion
             </Dropdown.Item>
-            <Dropdown.Item href="#experience" className="text-white ">
+            <Dropdown.Item href="#experience" className="text-white h3">
               Experiencia{" "}
             </Dropdown.Item>
-            <Dropdown.Item href="#languages" className="text-white">
+            <Dropdown.Item href="#languages" className="text-white h3">
               Lenguajes de Programacion
             </Dropdown.Item>
-            <Dropdown.Item href="#tech" className="text-white">
+            <Dropdown.Item href="#tech" className="text-white h3">
               Tecnologias
+            </Dropdown.Item>
+            <Dropdown.Item href="#herramientas" className="text-white h3">
+              Herramientas de trabajo
+            </Dropdown.Item>
+            <Dropdown.Item href="#metodologias" className="text-white h3">
+              Metodologias de trabajo
+            </Dropdown.Item>
+            <Dropdown.Item href="#descargar" className="text-white h3">
+              Descargar CV
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>
       {/*----------------------- Educacion --------------------------*/}
-      <section className="bg-light p-3 seccion">
+      <section className="bg-light p-2 seccion">
         <Row id="education">
           <Col>
             <Row>
@@ -365,7 +375,23 @@ const Resume = () => {
             </Col>
           </div>
         </Container>
+        <div className="card" id="descargar">
+          <button className="btn btn-success w-100">
+            <a
+              class="text-white p-3 rounded-5 display-5 "
+              href={cv}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="CV_Cristopher_Lazo.pdf"
+              style={{ textDecoration: "none" }}
+            >
+              Descargar CV <i class="bi bi-cloud-arrow-down-fill"></i>
+            </a>
+          </button>
+        </div>
       </section>
+
+      <Contact />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import about from "../../imgs/about.jpeg";
 import cv from "../../imgs/CV/CV_Cristopher_Lazo.pdf";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import { mascotas, juegos } from "./fotos";
+import Contact from "../Contact/Contact";
 import "./Home.css";
 const Home = () => {
   return (
@@ -148,6 +149,7 @@ const Home = () => {
           </div>
         </Container>
       </section>
+      <Contact />
     </div>
   );
 };

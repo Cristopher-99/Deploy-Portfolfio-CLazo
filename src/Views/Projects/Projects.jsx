@@ -12,7 +12,7 @@ import productoseco from "../../imgs/img projects/ecommerce/productos eco.png";
 import detaileco from "../../imgs/img projects/ecommerce/detail product.png";
 import abouteco from "../../imgs/img projects/ecommerce/about eco.png";
 import pasarella from "../../imgs/img projects/ecommerce/pasarella de pago.png";
-
+import Contact from "../Contact/Contact";
 import "./Projects.css";
 import { Link } from "react-router-dom";
 const Projects = () => {
@@ -355,6 +355,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <Contact />
     </>
   );
 };

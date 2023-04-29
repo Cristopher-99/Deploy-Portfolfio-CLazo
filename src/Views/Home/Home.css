@@ -51,9 +51,9 @@
   }
   .hobbies{
     min-height: 50vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.874), rgba(35, 150, 179, 0.699)), url("../../imgs/Background/seccion/gaming.gif");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.874), rgba(35, 150, 179, 0.904)), url("../../imgs/Background/seccion/binarios.gif");
     background-size: cover;
-    background-position: center center;  
+    background-position: center center; 
     color: white;
     border:white  solid 1px;
 

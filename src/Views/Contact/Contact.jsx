@@ -3,9 +3,15 @@ import { Card, ListGroup, Row, Container, Col } from "react-bootstrap";
 const Contact = () => {
   return (
     <div>
-      <section className=" card bg-light py-5 m-3  about " id="about-me">
+      <section className=" card bg-light py-5  about " id="about-me">
         <Container>
           <h1 className="text-primary mb-5">CONTACTO</h1>
+          <Row className="text-center my-auto mb-3">
+            <p className="display-6">
+              Si tienes alguna pregunta o simplemente quieres charlar, ¡no dudes
+              en ponerte en contacto conmigo!
+            </p>
+          </Row>
           <div class="row row-cols-2 row-cols-sm-4 g-3 ">
             <Col>
               <a
@@ -31,7 +37,7 @@ const Contact = () => {
                 style={{ textDecoration: "none" }}
               >
                 <i class="bi bi-envelope-at text-danger m-3 display-1"></i>
-                <h2 className="text-white">cristopherlazo1999@gmail.com</h2>
+                <h5 className="text-white">cristopherlazo1999@gmail.com</h5>
               </a>
             </Col>
             <Col>
@@ -44,12 +50,6 @@ const Contact = () => {
               </a>
             </Col>
           </div>
-          <Row className="text-center my-auto mt-3">
-            <p className="display-5">
-              Si tienes alguna pregunta o simplemente quieres charlar, ¡no dudes
-              en ponerte en contacto conmigo!
-            </p>
-          </Row>
         </Container>
       </section>
     </div>
