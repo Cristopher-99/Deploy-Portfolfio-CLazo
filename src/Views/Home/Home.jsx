@@ -5,10 +5,13 @@ import cv from "../../imgs/CV/CV_Cristopher_Lazo.pdf";
 import { Container, Row, Col, Button, Image } from "react-bootstrap";
 import { mascotas, juegos } from "./fotos";
 import Contact from "../Contact/Contact";
+import ScrollToTopButton from "../../Components/Scroll/Scroll";
 import "./Home.css";
 const Home = () => {
   return (
     <div className="fondo ">
+      <ScrollToTopButton />
+
       <div className="card mb-4 mx-auto  landing-page ">
         <Container>
           <Row className="justify-content-center">
@@ -149,7 +152,9 @@ const Home = () => {
           </div>
         </Container>
       </section>
-      <Contact />
+      <section>
+        <Contact />
+      </section>
     </div>
   );
 };

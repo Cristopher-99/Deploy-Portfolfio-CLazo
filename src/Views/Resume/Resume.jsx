@@ -13,7 +13,7 @@ import scrum from "../../imgs/metodologias/scrum.jpg";
 import gitflow from "../../imgs/metodologias/git flow.jpg";
 import cv from "../../imgs/CV/CV_Cristopher_Lazo.pdf";
 import Contact from "../Contact/Contact";
-
+import ScrollToTopButton from "../../Components/Scroll/Scroll";
 const Resume = () => {
   const [key, setKey] = useState("home");
   const escuelas = [
@@ -390,8 +390,8 @@ const Resume = () => {
           </button>
         </div>
       </section>
-
       <Contact />
+      <ScrollToTopButton />
     </div>
   );
 };
