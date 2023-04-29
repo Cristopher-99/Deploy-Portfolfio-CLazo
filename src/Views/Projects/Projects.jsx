@@ -20,8 +20,11 @@ const Projects = () => {
     <>
       <div class="container pt-3">
         <h1 className="display-3 title">Proyectos</h1>
-        <div class="card ">
-          <h1 class="titulo">SPA Pokemon Api</h1>
+
+        {/*  ---------------------- POKEMON ---------------------------- */}
+
+        <div class="card  mt-3">
+          <h1 class="titulo">Pokemon App</h1>
           <div
             id="carouselDark"
             class="carousel carousel-dark slide"
@@ -43,7 +46,7 @@ const Projects = () => {
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active bg-primary ">
-                <img src={homepoke} class="d-block w-100 h-100" alt="Slide 1" />
+                <img src={homepoke} class="d-block w-100" alt="Slide 1" />
                 <div class="carousel-caption d-none d-sm-block">
                   <h3 class="pestaña">Home</h3>
                 </div>
@@ -59,7 +62,11 @@ const Projects = () => {
                 </div>
               </div>
               <div class="carousel-item">
-                <img src={createpoke} class="d-block w-100" alt="Slide 3" />
+                <img
+                  src={createpoke}
+                  class="d-block w-100 h-100"
+                  alt="Slide 3"
+                />
                 <div class="carousel-caption d-none d-sm-block">
                   <h3 class="pestaña">Creacion de un Pokemon</h3>
                 </div>
@@ -72,10 +79,10 @@ const Projects = () => {
               data-bs-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon"
+                class="carousel-control-prev-icon bg-dark rounded-circle"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Previous</span>
+              <span class="visually-hidden ">Previous</span>
             </a>
             <a
               class="carousel-control-next button-des"
@@ -84,18 +91,23 @@ const Projects = () => {
               data-bs-slide="next"
             >
               <span
-                class="carousel-control-next-icon"
+                class="carousel-control-next-icon bg-dark rounded-circle"
                 aria-hidden="true"
               ></span>
               <span class="visually-hidden">Next</span>
             </a>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Single page Application Pokemon</h3>
+            <h3 class="card-title">RESTful API - PokeApi</h3>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              Poke app es un Single page Aplication Full Stack, la cual nos
+              permite buscar, filtrar y crear nuevos Pokemons. Los pokemons de
+              esta app esta traidos de la Api PokeApi, Tambien tiene su seccion
+              de Stats de cada Pokemon.
+            </p>
+            <p className="card-text">
+              Tecnologias usadas :
+              <b> React.js, Redux, PostgreSql, Sequelize y Express.</b>
             </p>
             <div class="datos card-text p-1 h3">
               <a
@@ -119,6 +131,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        {/*  ---------------------- COUNTRIES ---------------------------- */}
         <div class="card mt-3">
           <h1 class="titulo">SPA Countries Api</h1>
           <div
@@ -133,11 +146,7 @@ const Projects = () => {
                 class="active"
                 aria-current="true"
               ></li>
-              <li
-                data-bs-target="#CountryApp"
-                data-bs-slide-to="1"
-                class=""
-              ></li>
+              <li data-bs-target="#CountryApp" data-bs-slide-to="1"></li>
               <li data-bs-target="#CountryApp" data-bs-slide-to="2"></li>
               <li data-bs-target="#CountryApp" data-bs-slide-to="3"></li>
             </ol>
@@ -145,7 +154,7 @@ const Projects = () => {
               <div class="carousel-item active">
                 <img
                   src={homecountry}
-                  class="d-block w-100 h-100 imagen opacity-25"
+                  class="d-block w-100 h-100 imagen "
                   alt="Slide 1"
                 />
                 <div class="carousel-caption d-none d-sm-block">
@@ -184,10 +193,10 @@ const Projects = () => {
               data-bs-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon"
+                class="carousel-control-prev-icon bg-dark rounded-circle"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Previous</span>
+              <span class="visually-hidden ">Previous</span>
             </a>
             <a
               class="carousel-control-next button-des"
@@ -196,18 +205,22 @@ const Projects = () => {
               data-bs-slide="next"
             >
               <span
-                class="carousel-control-next-icon"
+                class="carousel-control-next-icon bg-dark rounded-circle"
                 aria-hidden="true"
               ></span>
               <span class="visually-hidden">Next</span>
             </a>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Single page Application Pokemon</h3>
+            <h3 class="card-title">RESTful API - REST COUNTRIES</h3>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              Countries app tambien un Single page Aplication Full Stack, la
+              cual nos permite buscar, filtrar y crear actividades en los Paises
+              de la api REST COUNTRIES.
+            </p>
+            <p className="card-text">
+              Tecnologias usadas:{" "}
+              <b>React.js, Redux, PostgreSql, Sequelize y Express. </b>
             </p>
             <div class="datos card-text p-1 h3">
               <a
@@ -219,9 +232,10 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        {/*  ---------------------- ECOMERCCE ---------------------------- */}
 
         <div class="card mt-3 mb-2">
-          <h1 class="titulo">Ecommerce H-Buy</h1>
+          <h1 class="titulo">H-Buy App Ecommerce </h1>
 
           <div
             id="carouselEcommerce"
@@ -281,10 +295,10 @@ const Projects = () => {
               data-bs-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon"
+                class="carousel-control-prev-icon bg-dark rounded-circle"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Previous</span>
+              <span class="visually-hidden ">Previous</span>
             </a>
             <a
               class="carousel-control-next button-des"
@@ -293,18 +307,29 @@ const Projects = () => {
               data-bs-slide="next"
             >
               <span
-                class="carousel-control-next-icon "
+                class="carousel-control-next-icon bg-dark rounded-circle"
                 aria-hidden="true"
               ></span>
               <span class="visually-hidden">Next</span>
             </a>
           </div>
           <div class="card-body">
-            <h3 class="card-title">Single page Application Pokemon</h3>
+            <h3 class="card-title">Ecommerce - Tematica mercado libre</h3>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              H-buy es un proyecto desarollado en forma grupal con la
+              metodologia de trabajo "Scrum". La cual tiene como objetivo
+              otorgar a los usuarios de esta pagina 2 roles, uno como vendedor y
+              otro como comprador para poder tener alguno de estos roles tendran
+              que loguearse con anterioridad. Para el propietario del Ecommerce
+              se le otorga la funcionalidad de poder administrar todos los
+              productos publicados y crear Categorias para productos.
+            </p>
+            <p class="card-text">
+              Tecnologias usadas:{" "}
+              <b>
+                MondoDB, Redux Toolkit, React.js, NodeJS, JavaScript, Bootstrap,
+                Material UI.{" "}
+              </b>
             </p>
             <div class="datos card-text p-1 h3">
               <a
