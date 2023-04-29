@@ -106,7 +106,7 @@ const Home = () => {
                   ))}
                 </div>
               </Row>
-              <Col className="text-center my-auto">
+              <Row className="text-center my-auto mt-4">
                 <p className="lead">
                   Soy un apasionado de los videojuegos y disfruto mucho jugando
                   en mi tiempo libre. Aunque debo admitir que no soy el mejor
@@ -115,7 +115,7 @@ const Home = () => {
                   jugando juegos como Rust, League of Legends (LoL) y Valorant,
                   aunque a veces me lleve un poco de tiempo dominarlos.
                 </p>
-              </Col>
+              </Row>
             </Col>
             <Col>
               <h2 className="text-white bg-success rounded-3 m-3">Mascotas</h2>
