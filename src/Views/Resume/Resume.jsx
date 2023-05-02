@@ -13,6 +13,7 @@ import scrum from "../../imgs/metodologias/scrum.jpg";
 import gitflow from "../../imgs/metodologias/git flow.jpg";
 import cv from "../../imgs/CV/CV_Cristopher_Lazo.pdf";
 import Contact from "../Contact/Contact";
+import apra from "../../imgs/education/Apra.jpg";
 import ScrollToTopButton from "../../Components/Scroll/Scroll";
 const Resume = () => {
   const [key, setKey] = useState("home");
@@ -163,7 +164,7 @@ const Resume = () => {
                   <div class="row g-0">
                     <div class="col-5 col-sm-4">
                       <img
-                        src={henry}
+                        src={apra}
                         class="img-fluid w-100 image "
                         alt="card-horizontal-image"
                       />
@@ -204,7 +205,7 @@ const Resume = () => {
                         </ul>
                       </p>
 
-                      <p class="card-text text-primary h5 m-2">
+                      <p class="card-text text-primary h5 p-2">
                         Agosto 2019 - Diciembre 2019 - 5 meses
                       </p>
                     </div>
@@ -238,9 +239,7 @@ const Resume = () => {
                     {ex.tareas.map((t) => (
                       <li>{t}</li>
                     ))}
-                    <p class="card-text text-primary h5 m-2">
-                      <span className="text-primary">{ex.duracion}</span>
-                    </p>
+                    <p class="card-text text-primary h5 p-2">{ex.duracion}</p>
                   </div>
                 </div>
               ))}

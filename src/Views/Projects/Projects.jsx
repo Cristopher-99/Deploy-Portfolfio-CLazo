@@ -16,6 +16,7 @@ import pasarella from "../../imgs/img projects/ecommerce/pasarella de pago.png";
 import Contact from "../Contact/Contact";
 import "./Projects.css";
 import { Link } from "react-router-dom";
+import { Col, Row } from "react-bootstrap";
 const Projects = () => {
   return (
     <>
@@ -112,24 +113,33 @@ const Projects = () => {
                 <b> React.js, Redux, PostgreSql, Sequelize y Express.</b>
               </p>
               <div class="datos card-text p-1 h3">
-                <a
-                  href="https://github.com/Cristopher-99/PI-POKEMON-CL"
-                  style={{ textDecoration: "none" }}
-                >
-                  <i class="bi bi-github"></i>Repositorio {""} | {""}
-                </a>
-                <a
-                  href="https://clazo-pokemon.netlify.app/"
-                  style={{ textDecoration: "none" }}
-                >
-                  <i class="bi bi-pc-display-horizontal"></i>Deploy {""} | {""}
-                </a>
-                <a
-                  href="https://www.youtube.com/watch?v=y5DRZvSYKfg&t=48s&ab_channel=CristopherLazo"
-                  style={{ textDecoration: "none" }}
-                >
-                  <i class="bi bi-youtube"></i>Video Presentacion {""}
-                </a>
+                <Row xs={1} md={3} className="p-3">
+                  <Col>
+                    <a
+                      href="https://github.com/Cristopher-99/PI-POKEMON-CL"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <i class="bi bi-github text-black"></i>Repositorio
+                    </a>
+                  </Col>
+                  <Col>
+                    <a
+                      href="https://clazo-pokemon.netlify.app/"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <i class="bi bi-globe2 text-success"></i>Visitar sitio
+                    </a>
+                  </Col>
+                  <Col>
+                    <a
+                      href="https://www.youtube.com/watch?v=y5DRZvSYKfg&t=48s&ab_channel=CristopherLazo"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <i class="bi bi-youtube text-danger"></i>Video
+                      Presentacion {""}
+                    </a>
+                  </Col>
+                </Row>
               </div>
             </div>
           </div>
@@ -231,7 +241,7 @@ const Projects = () => {
                 href="https://github.com/Cristopher-99/PI-Countries-CL"
                 style={{ textDecoration: "none" }}
               >
-                <i class="bi bi-github"></i>Repositorio {""}
+                <i class="bi bi-github text-black"></i>Repositorio {""}
               </a>
             </div>
           </div>
@@ -336,25 +346,32 @@ const Projects = () => {
               </b>
             </p>
             <div class="datos card-text p-1 h3">
-              <a
-                href="https://github.com/Cristopher-99/PF-H-Buy"
-                style={{ textDecoration: "none" }}
-              >
-                <i class="bi bi-github"></i>Repositorio {""} | {""}
-              </a>
-
-              <a
-                href="https://main.d2d0y3pf0pfssa.amplifyapp.com/"
-                style={{ textDecoration: "none" }}
-              >
-                <i class="bi bi-pc-display-horizontal"></i>Deploy {""} | {""}
-              </a>
-              <a
-                href="https://www.youtube.com/watch?v=SWiEAfj-TNY&ab_channel=HenryBuy"
-                style={{ textDecoration: "none" }}
-              >
-                <i class="bi bi-youtube"></i>Video Presentacion {""}
-              </a>
+              <Row xs={1} md={3} className="p-3">
+                <Col>
+                  <a
+                    href="https://github.com/Cristopher-99/PF-H-Buy"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <i class="bi bi-github text-black"></i>Repositorio
+                  </a>
+                </Col>
+                <Col>
+                  <a
+                    href="https://main.d2d0y3pf0pfssa.amplifyapp.com/"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <i class="bi bi-globe2 text-success"></i>Visitar sitio
+                  </a>
+                </Col>
+                <Col>
+                  <a
+                    href="https://www.youtube.com/watch?v=SWiEAfj-TNY&ab_channel=HenryBuy"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <i class="bi bi-youtube text-danger"></i>Video Presentacion
+                  </a>
+                </Col>
+              </Row>
             </div>
           </div>
         </div>
