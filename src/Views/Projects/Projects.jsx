@@ -118,6 +118,7 @@ const Projects = () => {
                     <a
                       href="https://github.com/Cristopher-99/PI-POKEMON-CL"
                       style={{ textDecoration: "none" }}
+                      target="_blank"
                     >
                       <i class="bi bi-github text-black"></i>Repositorio
                     </a>
@@ -126,6 +127,7 @@ const Projects = () => {
                     <a
                       href="https://clazo-pokemon.netlify.app/"
                       style={{ textDecoration: "none" }}
+                      target="_blank"
                     >
                       <i class="bi bi-globe2 text-success"></i>Visitar sitio
                     </a>
@@ -134,6 +136,7 @@ const Projects = () => {
                     <a
                       href="https://www.youtube.com/watch?v=y5DRZvSYKfg&t=48s&ab_channel=CristopherLazo"
                       style={{ textDecoration: "none" }}
+                      target="_blank"
                     >
                       <i class="bi bi-youtube text-danger"></i>Video
                       Presentacion {""}
@@ -240,6 +243,7 @@ const Projects = () => {
               <a
                 href="https://github.com/Cristopher-99/PI-Countries-CL"
                 style={{ textDecoration: "none" }}
+                target="_blank"
               >
                 <i class="bi bi-github text-black"></i>Repositorio {""}
               </a>
@@ -351,6 +355,7 @@ const Projects = () => {
                   <a
                     href="https://github.com/Cristopher-99/PF-H-Buy"
                     style={{ textDecoration: "none" }}
+                    target="_blank"
                   >
                     <i class="bi bi-github text-black"></i>Repositorio
                   </a>
@@ -359,6 +364,7 @@ const Projects = () => {
                   <a
                     href="https://main.d2d0y3pf0pfssa.amplifyapp.com/"
                     style={{ textDecoration: "none" }}
+                    target="_blank"
                   >
                     <i class="bi bi-globe2 text-success"></i>Visitar sitio
                   </a>
@@ -367,6 +373,7 @@ const Projects = () => {
                   <a
                     href="https://www.youtube.com/watch?v=SWiEAfj-TNY&ab_channel=HenryBuy"
                     style={{ textDecoration: "none" }}
+                    target="_blank"
                   >
                     <i class="bi bi-youtube text-danger"></i>Video Presentacion
                   </a>

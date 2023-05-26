@@ -22,7 +22,7 @@ const NavBar = () => {
       </Navbar.Toggle>
 
       <Navbar.Collapse id="responsive-navbar-nav ">
-        <Nav className="mx-auto h2 ">
+        <Nav className="mx-auto h3 ">
           <Link to="/" className="nav-link ">
             <span
               class={

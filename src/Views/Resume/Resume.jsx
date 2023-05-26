@@ -93,45 +93,45 @@ const Resume = () => {
             </h3>
           </Dropdown.Toggle>
           <Dropdown.Menu className="text-center  w-100 bg-dark menu ">
-            <Dropdown.Item href="#education" className="text-white h3">
+            <Dropdown.Item href="#education" className="text-primary h3">
               Educacion
             </Dropdown.Item>
-            <Dropdown.Item href="#experience" className="text-white h3">
+            <Dropdown.Item href="#experience" className="text-primary h3">
               Experiencia{" "}
             </Dropdown.Item>
-            <Dropdown.Item href="#languages" className="text-white h3">
+            <Dropdown.Item href="#languages" className="text-primary h3">
               Lenguajes de Programacion
             </Dropdown.Item>
-            <Dropdown.Item href="#tech" className="text-white h3">
+            <Dropdown.Item href="#tech" className="text-primary h3">
               Tecnologias
             </Dropdown.Item>
-            <Dropdown.Item href="#herramientas" className="text-white h3">
+            <Dropdown.Item href="#herramientas" className="text-primary h3">
               Herramientas de trabajo
             </Dropdown.Item>
-            <Dropdown.Item href="#metodologias" className="text-white h3">
+            <Dropdown.Item href="#metodologias" className="text-primary h3">
               Metodologias de trabajo
             </Dropdown.Item>
-            <Dropdown.Item href="#descargar" className="text-white h3">
+            <Dropdown.Item href="#descargar" className="text-primary h3">
               Descargar CV
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
       </div>
       {/*----------------------- Educacion --------------------------*/}
-      <section className="bg-light p-2 seccion">
+      <section className="bg-light p-2 m-3 seccion  ">
         <Row id="education">
           <Col>
             <Row>
               <Col className="text-center my-auto">
                 <h1 className="title">Educacion</h1>
-                <div class="row row-cols-1 row-cols-sm-1 g-3 ">
+                <div class="row row-cols-1 row-cols-sm-3 g-3">
                   {escuelas.map((e) => (
                     <div class="card mb-3 col">
                       <div class="row g-0">
                         <div class="col-5 col-sm-4">
                           <img
                             src={e.imagen}
-                            class="img-fluid w-100 image "
+                            class="img-fluid w-100 image"
                             alt="card-horizontal-image"
                           />
                         </div>
@@ -260,7 +260,7 @@ const Resume = () => {
                     class="card-img-top"
                     alt="card-group-image"
                   />
-                  <div class="card-body bg-primary text-white p-1">
+                  <div class="card-body bg-primary text-primary p-1">
                     <h5 class="card-title ">{l.titulo}</h5>
                   </div>
                 </div>
@@ -282,7 +282,7 @@ const Resume = () => {
                     alt="card-group-image"
                   />
                   <div class="card-body  carta mt-3 p-1">
-                    <h5 class="card-title bg-dark text-white rounded-3 p-1">
+                    <h5 class="card-title bg-dark text-primary rounded-3 p-1">
                       {l.titulo}
                     </h5>
                   </div>
@@ -384,7 +384,8 @@ const Resume = () => {
               download="CV_Cristopher_Lazo.pdf"
               style={{ textDecoration: "none" }}
             >
-              Descargar CV <i class="bi bi-cloud-arrow-down-fill"></i>
+              Descargar CV{" "}
+              <i class="bi bi-cloud-arrow-down-fill text-white"></i>
             </a>
           </button>
         </div>

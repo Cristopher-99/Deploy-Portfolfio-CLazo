@@ -7,11 +7,10 @@ import { mascotas, juegos } from "./fotos";
 import Contact from "../Contact/Contact";
 import ScrollToTopButton from "../../Components/Scroll/Scroll";
 import "./Home.css";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="fondo ">
-      <ScrollToTopButton />
-
       <div className="card mb-4 mx-auto  landing-page ">
         <Container>
           <Row className="justify-content-center">
@@ -23,7 +22,7 @@ const Home = () => {
               />
             </Col>
             <Col md={6} className="text-center">
-              <h1 className="display-3">¡Bienvenido a mi portfolio!</h1>
+              <h1 className="display-3">¡Bienvenidos a mi portfolio!</h1>
 
               <p className="lead">
                 Soy un desarrollador full-stack y estoy en constante búsqueda de
@@ -56,6 +55,25 @@ const Home = () => {
                       </a>
                     </Button>
                   </Col>
+                  <Row>
+                    <Col className="text-center p-1 ">
+                      <Button variant="dark" href="#hobbies ">
+                        <Link to={"/resume"} style={{ textDecoration: "none" }}>
+                          Ver Formación
+                        </Link>
+                      </Button>
+                    </Col>
+                    <Col className="text-center p-1">
+                      <Button variant="dark" href="#hobbies ">
+                        <Link
+                          to={"/projects"}
+                          style={{ textDecoration: "none" }}
+                        >
+                          Ver Proyectos
+                        </Link>
+                      </Button>
+                    </Col>
+                  </Row>
                 </Row>
               </div>
             </Col>
@@ -155,6 +173,7 @@ const Home = () => {
       <section>
         <Contact />
       </section>
+      <ScrollToTopButton />
     </div>
   );
 };
