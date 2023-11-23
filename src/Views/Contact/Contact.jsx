@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div>
       <section
-        className=" card bg-light py-5  about d-flex align-items-center justify-content-center "
+        className=" card bg-light py-5  about d-flex align-items-center justify-content-center"
         id="about-me"
       >
         <Container>
